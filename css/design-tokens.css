@@ -1,0 +1,231 @@
+/* ═══════════════════════════════════════════
+   AURA AI OS — Design Tokens
+   Global design system variables
+   ═══════════════════════════════════════════ */
+
+:root {
+  /* ── Brand Colors ── */
+  --aura-primary: #6366f1;
+  --aura-primary-light: #818cf8;
+  --aura-primary-dark: #4f46e5;
+  --aura-primary-glow: rgba(99, 102, 241, 0.15);
+  
+  --aura-secondary: #0ea5e9;
+  --aura-secondary-light: #38bdf8;
+  --aura-secondary-dark: #0284c7;
+  
+  --aura-accent: #f59e0b;
+  --aura-accent-light: #fbbf24;
+  --aura-accent-dark: #d97706;
+  
+  --aura-success: #10b981;
+  --aura-success-light: #34d399;
+  --aura-success-dark: #059669;
+  
+  --aura-warning: #f59e0b;
+  --aura-warning-light: #fbbf24;
+  --aura-warning-dark: #d97706;
+  
+  --aura-danger: #ef4444;
+  --aura-danger-light: #f87171;
+  --aura-danger-dark: #dc2626;
+  
+  --aura-info: #3b82f6;
+  --aura-info-light: #60a5fa;
+  --aura-info-dark: #2563eb;
+  
+  /* ── Neutral Scale (Dark Mode Default) ── */
+  --aura-bg-0: #0a0a0f;
+  --aura-bg-1: #0f0f1a;
+  --aura-bg-2: #13131f;
+  --aura-bg-3: #1a1a2e;
+  --aura-bg-4: #1e1e3a;
+  --aura-bg-5: #252545;
+  --aura-bg-6: #2d2d52;
+  --aura-bg-7: #353560;
+  --aura-bg-8: #3d3d6e;
+  --aura-bg-9: #45457c;
+  
+  --aura-fg-0: #ffffff;
+  --aura-fg-1: #e2e2f0;
+  --aura-fg-2: #c4c4dc;
+  --aura-fg-3: #a6a6c8;
+  --aura-fg-4: #8888b4;
+  --aura-fg-5: #6a6aa0;
+  --aura-fg-6: #4c4c8c;
+  --aura-fg-7: #2e2e78;
+  --aura-fg-8: #101064;
+  --aura-fg-9: #000050;
+  
+  /* ── Border Colors ── */
+  --aura-border: rgba(255, 255, 255, 0.06);
+  --aura-border-hover: rgba(255, 255, 255, 0.12);
+  --aura-border-active: rgba(99, 102, 241, 0.4);
+  --aura-border-focus: rgba(99, 102, 241, 0.6);
+  
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.4), 0 8px 16px rgba(0, 0, 0, 0.3);
+  --shadow-glow-primary: 0 0 20px rgba(99, 102, 241, 0.3), 0 0 40px rgba(99, 102, 241, 0.1);
+  --shadow-glow-success: 0 0 20px rgba(16, 185, 129, 0.3), 0 0 40px rgba(16, 185, 129, 0.1);
+  --shadow-glow-danger: 0 0 20px rgba(239, 68, 68, 0.3), 0 0 40px rgba(239, 68, 68, 0.1);
+  
+  /* ── Typography ── */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  
+  --text-xs: 0.6875rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+  
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 2;
+  
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.02em;
+  --tracking-wider: 0.04em;
+  
+  /* ── Spacing ── */
+  --space-px: 1px;
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  
+  /* ── Border Radius ── */
+  --radius-none: 0;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* ── Transitions ── */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slower: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  /* ── Z-Index Scale ── */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-toast: 800;
+  
+  /* ── Layout ── */
+  --sidebar-width: 260px;
+  --sidebar-collapsed: 68px;
+  --topbar-height: 64px;
+  --content-max-width: 1600px;
+  
+  /* ── Scrollbar ── */
+  --scrollbar-width: 6px;
+  --scrollbar-track: var(--aura-bg-2);
+  --scrollbar-thumb: var(--aura-bg-6);
+  --scrollbar-thumb-hover: var(--aura-bg-7);
+}
+
+/* ═══════════════════════════════════════════
+   Light Mode Override
+   ═══════════════════════════════════════════ */
+
+[data-theme="light"] {
+  --aura-bg-0: #ffffff;
+  --aura-bg-1: #fafafb;
+  --aura-bg-2: #f4f4f6;
+  --aura-bg-3: #ebebef;
+  --aura-bg-4: #e0e0e8;
+  --aura-bg-5: #d4d4e0;
+  --aura-bg-6: #c8c8d8;
+  --aura-bg-7: #bcbcd0;
+  --aura-bg-8: #b0b0c8;
+  --aura-bg-9: #a4a4c0;
+  
+  --aura-fg-0: #0a0a1a;
+  --aura-fg-1: #1a1a2e;
+  --aura-fg-2: #2a2a42;
+  --aura-fg-3: #3a3a56;
+  --aura-fg-4: #4a4a6a;
+  --aura-fg-5: #5a5a7e;
+  --aura-fg-6: #6a6a92;
+  --aura-fg-7: #7a7aa6;
+  --aura-fg-8: #8a8aba;
+  --aura-fg-9: #9a9ace;
+  
+  --aura-border: rgba(0, 0, 0, 0.06);
+  --aura-border-hover: rgba(0, 0, 0, 0.12);
+  
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ═══════════════════════════════════════════
+   Semantic Color Tokens
+   ═══════════════════════════════════════════ */
+
+:root {
+  --color-surface-0: var(--aura-bg-0);
+  --color-surface-1: var(--aura-bg-1);
+  --color-surface-2: var(--aura-bg-2);
+  --color-surface-3: var(--aura-bg-3);
+  --color-surface-4: var(--aura-bg-4);
+  --color-surface-5: var(--aura-bg-5);
+  
+  --color-text-primary: var(--aura-fg-0);
+  --color-text-secondary: var(--aura-fg-2);
+  --color-text-tertiary: var(--aura-fg-4);
+  --color-text-muted: var(--aura-fg-5);
+  --color-text-disabled: var(--aura-fg-6);
+  
+  --color-border-default: var(--aura-border);
+  --color-border-hover: var(--aura-border-hover);
+  --color-border-focus: var(--aura-border-focus);
+  
+  --color-interactive-bg: var(--aura-bg-3);
+  --color-interactive-bg-hover: var(--aura-bg-4);
+  --color-interactive-bg-active: var(--aura-bg-5);
+  
+  --color-interactive-text: var(--aura-fg-1);
+  --color-interactive-text-hover: var(--aura-fg-0);
+}
